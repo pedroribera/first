@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <script src="https://kit.fontawesome.com/c87a785cae.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Escola DNC - Escola DNC</title>
+        <style type="text/css">
+
+            body {
+                background-color:white;
+                margin:0;
+                padding:0;
+            }
+            #head {
+                height:120px;
+                width:100%;
+                padding:20px; 
+                display: flex;
+                align-items: center;
+            }
+                #head1 {
+                    height:120px;
+                    width:100%;
+                    padding:20px;
+                    margin-right:50px;
+                    margin-left:50px;
+                    display: flex;
+                    align-items: center;
+                }
+                    #box1 {
+                        background-image: url("data:image/png;base64,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");
+                        background-size: 60%;
+                        background-repeat: no-repeat;
+                        height: 90px;
+                        width:10%;
+                    }
+                    #box2 {
+                        height: 150px;
+                        width:70%;
+                        margin-left: 15px;
+                        display: flex;
+                        justify-content:space-between;
+                        align-items: center;
+                    }
+                        #box2 li {
+                            list-style: none;
+                            display: inline; 
+                            padding: 20px;
+                            font-size: large;
+                            font-family: sans-serif;
+                        }
+                        #box2 a {
+                            text-decoration: none;
+                            color: blue;
+                        }
+                            #box2 a:hover {
+                                color: black;
+                        
+                            }
+                    #box3 {
+                        height: 150px;
+                        width: 5%;
+                        margin-left: 15px;
+                        font-size: 150%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        #box3 a {
+                            color: blue;
+                        }
+                        #box3 a:hover {
+                            color: black;
+                        }
+                    #box4 {
+                        height: 150px;
+                        width: 15%;
+                        margin-left: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        #box4 a {
+                            text-decoration: none;
+                            color:blue;
+                            font-size: large;
+                            font-family: sans-serif;
+                            border-style:solid;
+                            border-radius: 5px;
+                            padding: 3px;
+                        }
+                        #box4 a:hover {
+                            color:white;
+                            background-color: blue;
+                            border-color: black;
+                        }
+            #corpo {
+                background-color:antiquewhite;
+                background-image: url("https://www.escoladnc.com.br/wp-content/uploads/2022/05/para-empresas-1.png");
+                background-size: auto;
+                background-repeat: no-repeat;
+                background-position: right;
+                height:650px;
+                width:100%;
+                padding: 20px;
+                display:flex;
+            }
+                #c1 {
+                    background-color: antiquewhite;
+                    height:550px;
+                    width:40%;
+                    margin-left:50px;
+                    padding: 30px;
+                    display:flex;
+                    flex-wrap: wrap;
+                }
+                    #c2 {
+                        background-color: antiquewhite;
+                        height:450px;
+                        width: 100%;
+                        font-family: sans-serif;
+                    }
+                    #c3 {
+                        background-color:antiquewhite;
+                        height: 100px;
+                        width: 100%;
+                        margin-top: 30px;
+                    }
+                        #c3 a{
+                            text-decoration: none;
+                            color: blue;
+                            border-style:hidden;
+                            border-radius: 5px;
+                            font-size: large;
+                            font-weight: bold;
+                            font-family: sans-serif;
+                            padding:10px;
+                            background-color:cyan;
+                        }
+                        #c3 a:hover {
+                            color:black;
+                            background-color: deepskyblue;
+                        }
+                        h1 {
+                            font-size: 50px;
+                        }
+                        p {
+                            font-size: 20px;
+                        }
+        </style>
+    </head>
+    <!--Corpo separação html / css-->
+    <body>
+        <div id="head">
+            <div id="head1">
+                <div id="box1"></div>
+                <div id="box2">
+                    <li><a href="#" target="_blank">Nossas Formações</a></li>
+                    <li><a href="#" target="_blank">Cursos Online</a></li>
+                    <li><a href="#" target="_blank">Para Empresas</a></li>
+                    <li><a href="#" target="_blank">Conteúdos Gratuitos</a></li>
+                    <li><a href="#" target="_blank">Blog</a></li>
+                    <li><a href="#" target="_blank">Suporte</a></li>
+                </div>
+                <div id="box3">
+                    <a href="#" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div id="box4">
+                    <a href="#" target="_blank">Login</a>
+                </div>
+            </div>
+        </div>   
+        <div id="corpo">
+            <a href="https://api.whatsapp.com/send?phone=5511989237649&text=Texto%20aqui"
+    target="_blank"
+    style="position:fixed;bottom:20px;right:30px;">
+    <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+</a>
+            <div id="c1">
+                <div id="c2"><h1>A ESCOLA <br>REVOLUCIONÁRIA<br> PARA A NOVA<br> GERAÇÃO DE LÍDERES</h1>
+                <p> Estude e faça projetos em empresas referência no mercado como:<br> <b>Ambev, Basf, Unilever, Burger King e muitas outras.</b><br><br>
+                    Para quem busca conhecimento e experiência profissional nas áreas <br>de: <b>Gestão de Projetos, Ciência de Dados, Marketing e Vendas.</b></p>
+                </div>
+                <div id="c3"><a href="#" target="_blank">CONHEÇA NOSSAS FORMAÇÕES  <i class="fa-solid fa-circle-arrow-right"></i>
+        </div>
+    </body>
+</html>
